@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 0.7;
+}
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+
+header{
+   height:100px;
+   
+   display: flex;
+   justify-content: space-around;
+   align-items:center;
+}
+header h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+ul.myclass{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+
+.bg{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color:#fff;
+	text-align: center;
+}
+.bg .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1;
+}
+.bg .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75;
+}
+.bg h1{
+	font: bold 60px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+    color:burlywood
+    width:50%;
+    position: relative;
+    top:100px;
+}
+
+.bg h3{
+	font: normal 28px 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+    color:burlywood
+    width:50%;
+    position: relative;
+    top:100px
+}
+
+.bg p{
+    font: normal 28px 'Open Sans', sans-serif;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    width:50%;
+    padding :10px;
+    position: relative;
+    top:100px;
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 48px;
+	}
+
+	.hero h3{
+		font-size: 24px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+
+
+ul li a{
+    padding:0 20px;
+    text-decoration: none;
+    columns: #3a3a3a;
+    display: inline-block;
+}
+li a::after{
+    content:'';
+    display: block;
+    height:4px;
+    width:0;
+    background : #c4c4f7;
+    transition : all .5s
+}
+
+li a:hover::after{
+    width:100%;
+}
+
+.project{
+    position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color:#fff;
+	text-align: center;
+}
+
+.project h2{
+    font: bold 60px 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+    color:burlywood
+    width:50%;
+    position: relative;
+    top:100px;
+}
+
+.project h3{
+    font: bold  'Open Sans', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+    color:burlywood
+    width:50%;
+    position: relative;
+    top:100px;
+}
+.project p{
+    font: normal 24px 'Open Sans', sans-serif;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    color:burlywood
+    width:50%;
+    position: relative;
+    top:100px
+}
+
+.s-2 {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    opacity: 0.75;
+}
+.skills{
+	background-color: #f7f7f7;
+}
+
+.skills .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.skills .grid li i{
+    font-size: 50px;
+    color: #390a58;
+    margin-bottom: 25px;
+}
+
+.skills .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.skills .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.skills .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.skills .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.skills .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+footer{
+    display:flex;
+    position: relative;
+    left:50px;
+    top:50px;
+    down:50px;
+}
